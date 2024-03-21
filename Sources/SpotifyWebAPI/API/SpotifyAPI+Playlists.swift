@@ -719,7 +719,7 @@ public extension SpotifyAPI where
                 "limit": limit,
                 "offset": offset
             ],
-            requiredScopes: []
+            requiredScopes: [.playlistReadCollaborative, .playlistReadPrivate]
         )
         .decodeSpotifyObject(PagingObject<Playlist<PlaylistItemsReference>>.self)
         
